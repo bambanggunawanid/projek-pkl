@@ -26,92 +26,84 @@ long SonarSensor(int trigPin, int echoPin)
     duration = pulseIn(echoPin, HIGH);
     return distance = (duration / 2) / 29.1;
 }
-
 void forward()
 {
-    motor1.setSpeed(240);
-    motor1.run(FORWARD);
-    motor2.setSpeed(240);
-    motor2.run(BACKWARD);
-    motor3.setSpeed(0);
-    motor3.run(FORWARD);
+  motor1.setSpeed(240);
+  motor1.run(FORWARD);
+  motor2.setSpeed(240);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(0);
+  motor3.run(FORWARD);
 }
-
 void backward()
 {
-    motor1.setSpeed(240);
-    motor1.run(BACKWARD);
-    motor2.setSpeed(240);
-    motor2.run(FORWARD);
-    motor3.setSpeed(0);
-    motor3.run(BACKWARD);
+  motor1.setSpeed(240);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(240);
+  motor2.run(FORWARD);
+  motor3.setSpeed(0);
+  motor3.run(BACKWARD);
 }
-
 void right()
 {
-    motor1.setSpeed(90);
-    motor1.run(FORWARD);
-    motor2.setSpeed(90);
-    motor2.run(FORWARD);
-    motor3.setSpeed(240);
-    motor3.run(BACKWARD);
+  motor1.setSpeed(90);
+  motor1.run(FORWARD);
+  motor2.setSpeed(90);
+  motor2.run(FORWARD);
+  motor3.setSpeed(180);
+  motor3.run(BACKWARD);
 }
-
 void obliqueLeft()
 {
-    motor1.setSpeed(70);
-    motor1.run(FORWARD);
-    motor2.setSpeed(235);
-    motor2.run(BACKWARD);
-    motor3.setSpeed(187);
-    motor3.run(FORWARD);
+  motor1.setSpeed(70);
+  motor1.run(FORWARD);
+  motor2.setSpeed(235);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(187);
+  motor3.run(FORWARD);
 }
-
 void left()
 {
-    motor1.setSpeed(90);
-    motor1.run(BACKWARD);
-    motor2.setSpeed(90);
-    motor2.run(BACKWARD);
-    motor3.setSpeed(240);
-    motor3.run(FORWARD);
+  motor1.setSpeed(90);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(90);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(180);
+  motor3.run(FORWARD);
 }
-
 void obliqueRight()
 {
-    motor1.setSpeed(235);
-    motor1.run(FORWARD);
-    motor2.setSpeed(70);
-    motor2.run(BACKWARD);
-    motor3.setSpeed(187);
-    motor3.run(BACKWARD);
+  motor1.setSpeed(235);
+  motor1.run(FORWARD);
+  motor2.setSpeed(70);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(187);
+  motor3.run(BACKWARD);
 }
-
 void spin()
 {
-    motor1.setSpeed(255);
-    motor1.run(FORWARD);
-    motor2.setSpeed(255);
-    motor2.run(FORWARD);
-    motor3.setSpeed(255);
-    motor3.run(FORWARD);
+  motor1.setSpeed(255);
+  motor1.run(FORWARD);
+  motor2.setSpeed(255);
+  motor2.run(FORWARD);
+  motor3.setSpeed(255);
+  motor3.run(FORWARD);
 }
-
 void backspin()
 {
-    motor1.setSpeed(255);
-    motor1.run(BACKWARD);
-    motor2.setSpeed(255);
-    motor2.run(BACKWARD);
-    motor3.setSpeed(255);
-    motor3.run(BACKWARD);
+  motor1.setSpeed(255);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(255);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(255);
+  motor3.run(BACKWARD);
 }
 
 void Stop()
 {
-    motor1.run(RELEASE);
-    motor2.run(RELEASE);
-    motor3.run(RELEASE);
+  motor1.run(RELEASE);
+  motor2.run(RELEASE);
+  motor3.run(RELEASE);
 }
 
 void setup()

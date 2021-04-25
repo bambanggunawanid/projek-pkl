@@ -73,12 +73,12 @@ long SonarSensor(int trigPin, int echoPin)
 */
 void forward()
 {
-  motor1.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 1 sebesar 100% duty cycle
-  motor1.run(FORWARD);  // Motor berputar searah jarum jam
-  motor2.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 2 sebesar 100% duty cycle
-  motor2.run(BACKWARD); // Motor berputar searah jarum jam
-  motor3.setSpeed(0);   // Inisiasi kecepatan minimum untuk motor 3 sebesar 0% duty cycle
-  motor3.run(FORWARD);  // Motor berputar searah jarum jam
+  motor1.setSpeed(240);
+  motor1.run(FORWARD);
+  motor2.setSpeed(240);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(0);
+  motor3.run(FORWARD);
 }
 
 /*
@@ -86,12 +86,12 @@ void forward()
 */
 void backward()
 {
-  motor1.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 1 sebesar 100% duty cycle
-  motor1.run(BACKWARD); // Motor berputar melawan jarum jam
-  motor2.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 2 sebesar 100% duty cycle
-  motor2.run(FORWARD);  // Motor berputar melawan jarum jam
-  motor3.setSpeed(0);   // Inisiasi kecepatan minimum untuk motor 3 sebesar 0% duty cycle
-  motor3.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor1.setSpeed(240);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(240);
+  motor2.run(FORWARD);
+  motor3.setSpeed(0);
+  motor3.run(BACKWARD);
 }
 
 /*
@@ -99,12 +99,12 @@ void backward()
 */
 void right()
 {
-  motor1.setSpeed(90);  // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(FORWARD);  // Motor berputar melawan jarum jam
-  motor2.setSpeed(90);  // Inisiasi kecepatan motor 2 sebesar 37% duty cycle
-  motor2.run(FORWARD);  // Motor berputar searah jarum jam
-  motor3.setSpeed(240); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
-  motor3.run(BACKWARD); // Motor berputar searah jarum jam
+  motor1.setSpeed(90);
+  motor1.run(FORWARD);
+  motor2.setSpeed(90);
+  motor2.run(FORWARD);
+  motor3.setSpeed(180);
+  motor3.run(BACKWARD);
 }
 
 /*
@@ -112,12 +112,12 @@ void right()
 */
 void obliqueLeft()
 {
-  motor1.setSpeed(70);  // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(FORWARD);  // Motor berputar melawan jarum jam
-  motor2.setSpeed(235); // Inisiasi kecepatan motor 2 sebesar 37% duty cycle
-  motor2.run(BACKWARD); // Motor berputar searah jarum jam
-  motor3.setSpeed(187); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
-  motor3.run(FORWARD);  // Motor berputar searah jarum jam
+  motor1.setSpeed(70);
+  motor1.run(FORWARD);
+  motor2.setSpeed(235);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(187);
+  motor3.run(FORWARD);
 }
 
 /*
@@ -125,12 +125,12 @@ void obliqueLeft()
 */
 void left()
 {
-  motor1.setSpeed(90);  // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(BACKWARD); // Motor berputar searah jarum jam
-  motor2.setSpeed(90);  // Inisiasi kecepatan motor 2 sebesar 41% duty cycle
-  motor2.run(BACKWARD); // Motor berputar melawan jarum jam
-  motor3.setSpeed(240); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
-  motor3.run(FORWARD);  // Motor berputar melawan jarum jam
+  motor1.setSpeed(90);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(90);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(180);
+  motor3.run(FORWARD);
 }
 
 /*
@@ -138,12 +138,12 @@ void left()
 */
 void obliqueRight()
 {
-  motor1.setSpeed(235); // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(FORWARD);  // Motor berputar searah jarum jam
-  motor2.setSpeed(70);  // Inisiasi kecepatan motor 2 sebesar 41% duty cycle
-  motor2.run(BACKWARD); // Motor berputar melawan jarum jam
-  motor3.setSpeed(187); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
-  motor3.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor1.setSpeed(235);
+  motor1.run(FORWARD);
+  motor2.setSpeed(70);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(187);
+  motor3.run(BACKWARD);
 }
 
 /*
@@ -151,12 +151,12 @@ void obliqueRight()
 */
 void spin()
 {
-  motor1.setSpeed(255); // Inisiasi kecepatan motor 1 sebesar 100% duty cycle
-  motor1.run(FORWARD);  // Motor berputar searah jarum jam
-  motor2.setSpeed(255); // Inisiasi kecepatan motor 2 sebesar 100% duty cycle
-  motor2.run(FORWARD);  // Motor berputar melawan jarum jam
-  motor3.setSpeed(255); // Inisiasi kecepatan motor 3 sebesar 100% duty cycle
-  motor3.run(FORWARD);  // Motor berputar searah jarum jam
+  motor1.setSpeed(255);
+  motor1.run(FORWARD);
+  motor2.setSpeed(255);
+  motor2.run(FORWARD);
+  motor3.setSpeed(255);
+  motor3.run(FORWARD);
 }
 
 /*
@@ -164,12 +164,12 @@ void spin()
 */
 void backspin()
 {
-  motor1.setSpeed(255); // Inisiasi kecepatan motor 1 sebesar 100% duty cycle
-  motor1.run(BACKWARD); // Motor berputar melawan jarum jam
-  motor2.setSpeed(255); // Inisiasi kecepatan motor 2 sebesar 100% duty cycle
-  motor2.run(BACKWARD); // Motor berputar searah jarum jam
-  motor3.setSpeed(255); // Inisiasi kecepatan motor 3 sebesar 100% duty cycle
-  motor3.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor1.setSpeed(255);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(255);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(255);
+  motor3.run(BACKWARD);
 }
 
 /*
@@ -179,10 +179,9 @@ void backspin()
 */
 void Stop()
 {
-  // stop the motor when release the button
-  motor1.run(RELEASE); // Menghentikan motor dc atau setara dengan setSpeed 0
-  motor2.run(RELEASE); // Menghentikan motor dc atau setara dengan setSpeed 0
-  motor3.run(RELEASE); // Menghentikan motor dc atau setara dengan setSpeed 0
+  motor1.run(RELEASE);
+  motor2.run(RELEASE);
+  motor3.run(RELEASE);
 }
 
 /*
@@ -274,13 +273,13 @@ void loop()
     if (THIRDSensor > 14)
     {
       // Jika sensor 2 mendeteksi tembok lebih dari 0 hingga 8 cm maka
-      if (SECONDSensor<8 & SECONDSensor> 0)
+      if (SECONDSensor<0 & SECONDSensor> 8)
       {
         left();
         delay(150);
       }
       // Jika sensor 1 mendeteksi tembok lebih dari 0 hingga 8 cm maka
-      else if ((FIRSTSensor<8 & FIRSTSensor> 0) && (SECONDSensor<8 & SECONDSensor> 0))
+      else if ((FIRSTSensor<8 & FIRSTSensor> 0))
       {
         right();
         delay(150);

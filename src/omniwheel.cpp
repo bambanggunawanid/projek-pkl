@@ -76,7 +76,7 @@ void forward()
   motor1.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 1 sebesar 100% duty cycle
   motor1.run(FORWARD);  // Motor berputar searah jarum jam
   motor2.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 2 sebesar 100% duty cycle
-  motor2.run(FORWARD);  // Motor berputar searah jarum jam
+  motor2.run(BACKWARD); // Motor berputar searah jarum jam
   motor3.setSpeed(0);   // Inisiasi kecepatan minimum untuk motor 3 sebesar 0% duty cycle
   motor3.run(FORWARD);  // Motor berputar searah jarum jam
 }
@@ -89,22 +89,22 @@ void backward()
   motor1.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 1 sebesar 100% duty cycle
   motor1.run(BACKWARD); // Motor berputar melawan jarum jam
   motor2.setSpeed(240); // Inisiasi kecepatan maksimum untuk motor 2 sebesar 100% duty cycle
-  motor2.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor2.run(FORWARD);  // Motor berputar melawan jarum jam
   motor3.setSpeed(0);   // Inisiasi kecepatan minimum untuk motor 3 sebesar 0% duty cycle
   motor3.run(BACKWARD); // Motor berputar melawan jarum jam
 }
 
 /*
-  Fungsi left() untuk membuat robot bergerak jalan ke kiri
+  Fungsi right() untuk membuat robot bergerak jalan ke kiri
 */
-void left()
+void right()
 {
   motor1.setSpeed(90);  // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor1.run(FORWARD);  // Motor berputar melawan jarum jam
   motor2.setSpeed(90);  // Inisiasi kecepatan motor 2 sebesar 37% duty cycle
   motor2.run(FORWARD);  // Motor berputar searah jarum jam
   motor3.setSpeed(240); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
-  motor3.run(FORWARD);  // Motor berputar searah jarum jam
+  motor3.run(BACKWARD); // Motor berputar searah jarum jam
 }
 
 /*
@@ -112,25 +112,25 @@ void left()
 */
 void obliqueLeft()
 {
-  motor1.setSpeed(0);   // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(BACKWARD); // Motor berputar melawan jarum jam
-  motor2.setSpeed(195); // Inisiasi kecepatan motor 2 sebesar 37% duty cycle
-  motor2.run(FORWARD);  // Motor berputar searah jarum jam
-  motor3.setSpeed(195); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
+  motor1.setSpeed(70);  // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
+  motor1.run(FORWARD);  // Motor berputar melawan jarum jam
+  motor2.setSpeed(235); // Inisiasi kecepatan motor 2 sebesar 37% duty cycle
+  motor2.run(BACKWARD); // Motor berputar searah jarum jam
+  motor3.setSpeed(187); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
   motor3.run(FORWARD);  // Motor berputar searah jarum jam
 }
 
 /*
-  Fungsi right() untuk membuat robot bergerak jalan ke kanan
+  Fungsi left() untuk membuat robot bergerak jalan ke kanan
 */
-void right()
+void left()
 {
   motor1.setSpeed(90);  // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
-  motor1.run(FORWARD);  // Motor berputar searah jarum jam
+  motor1.run(BACKWARD); // Motor berputar searah jarum jam
   motor2.setSpeed(90);  // Inisiasi kecepatan motor 2 sebesar 41% duty cycle
   motor2.run(BACKWARD); // Motor berputar melawan jarum jam
   motor3.setSpeed(240); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
-  motor3.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor3.run(FORWARD);  // Motor berputar melawan jarum jam
 }
 
 /*
@@ -138,11 +138,11 @@ void right()
 */
 void obliqueRight()
 {
-  motor1.setSpeed(195); // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
+  motor1.setSpeed(235); // Inisiasi kecepatan motor 1 sebesar 37% duty cycle
   motor1.run(FORWARD);  // Motor berputar searah jarum jam
-  motor2.setSpeed(0);   // Inisiasi kecepatan motor 2 sebesar 41% duty cycle
+  motor2.setSpeed(70);  // Inisiasi kecepatan motor 2 sebesar 41% duty cycle
   motor2.run(BACKWARD); // Motor berputar melawan jarum jam
-  motor3.setSpeed(195); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
+  motor3.setSpeed(187); // Inisiasi kecepatan motor 3 sebesar 75% duty cycle
   motor3.run(BACKWARD); // Motor berputar melawan jarum jam
 }
 
@@ -154,7 +154,7 @@ void spin()
   motor1.setSpeed(255); // Inisiasi kecepatan motor 1 sebesar 100% duty cycle
   motor1.run(FORWARD);  // Motor berputar searah jarum jam
   motor2.setSpeed(255); // Inisiasi kecepatan motor 2 sebesar 100% duty cycle
-  motor2.run(BACKWARD); // Motor berputar melawan jarum jam
+  motor2.run(FORWARD);  // Motor berputar melawan jarum jam
   motor3.setSpeed(255); // Inisiasi kecepatan motor 3 sebesar 100% duty cycle
   motor3.run(FORWARD);  // Motor berputar searah jarum jam
 }
@@ -167,7 +167,7 @@ void backspin()
   motor1.setSpeed(255); // Inisiasi kecepatan motor 1 sebesar 100% duty cycle
   motor1.run(BACKWARD); // Motor berputar melawan jarum jam
   motor2.setSpeed(255); // Inisiasi kecepatan motor 2 sebesar 100% duty cycle
-  motor2.run(FORWARD);  // Motor berputar searah jarum jam
+  motor2.run(BACKWARD); // Motor berputar searah jarum jam
   motor3.setSpeed(255); // Inisiasi kecepatan motor 3 sebesar 100% duty cycle
   motor3.run(BACKWARD); // Motor berputar melawan jarum jam
 }
